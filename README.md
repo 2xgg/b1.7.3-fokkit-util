@@ -60,6 +60,6 @@ Edit `gradle.properties` to customize:
 
 ## Notes
 
-- No StationAPI included (pure Fabric)
+- No StationAPI, hoping to not use this thank you for the example mod though. (pure Fabric/Babric)
 - No extra dependencies - add what you need
 - Both client and server run tasks configured
