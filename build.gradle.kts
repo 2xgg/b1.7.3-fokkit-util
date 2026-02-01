@@ -11,16 +11,8 @@ base.archivesName = project.properties["archives_base_name"] as String
 version = project.properties["mod_version"] as String
 group = project.properties["maven_group"] as String
 
-loom {
-	runs {
-		register("client") {
-			client()
-		}
-		register("server") {
-			server()
-		}
-	}
-}
+// Run configurations are auto-created by babric-loom-extension
+// Use: ./gradlew runClient and ./gradlew runServer
 
 repositories {
 	maven("https://maven.glass-launcher.net/snapshots/")
@@ -33,7 +25,7 @@ repositories {
 
 dependencies {
 	minecraft("com.mojang:minecraft:b1.7.3")
-	mappings("net.glasslauncher:biny:b1.7.3+build.1:v2")
+	mappings("net.glasslauncher:biny:b1.7.3+e0778a3:v2")
 	modImplementation("net.fabricmc:fabric-loader:${project.properties["loader_version"]}")
 
 	implementation("org.apache.logging.log4j:log4j-core:2.17.2")
